@@ -6,7 +6,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# In[]
 def get_soup(url: str) -> 'Beautiful soup':
     headers = {'User-Agent': 
                  ('Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
@@ -30,7 +29,7 @@ def chunks(l: list, n: int) -> 'generator':
 
 def get_date_range(start: str='2017-10-15', 
                    end: str='2017-10-25') -> list:
-    """get list of days in str and day of week"""
+    """get list of days in str --'YYYY-MM-DD' and day of week"""
     range = pd.date_range(start, end, freq = 'D')
     return [(str(i)[:10], i.dayofweek) for i in range]
 
