@@ -30,13 +30,13 @@ plt.tick_params(axis = 'both', which = 'major', labelsize = 12)
 sns.swarmplot(x='sector', y='market_capitalization_rs', data=df, size=4, linewidth=1)
 plt.xticks(rotation=-75)
 plt.text(y=-75, x =-1,
-    s = '   ©Rpy3                                                                                                                                Source: NEPSE   ',
+    s = '   ©Rpy3.blogspot.com                                                                                                            Source: NEPSE   ',
     fontsize = 14, color = '#f0f0f0', backgroundcolor = 'grey')
-plt.text(x = -1, y = 155, s = "Sectors Vs Market capital (Billion Rs.)",
+plt.text(x = -1, y = 155, s = "Market capital (Billion Rs.) VS Sectors",
                fontsize = 26, weight = 'bold', alpha = .75)
 plt.text(x = -1, y = 137, 
-               s = 'NEPSE has total market capital of Rs. 1818.8 billion and total no of shares 4.9 Billion.\nDemoniated by banks and insurances.',
-              fontsize = 16, alpha = .85)
+               s = 'NEPSE: Total market capital of Rs. 1818.8 billion and total no of shares 4.9 Billion.\nDominated by banks and insurances.',
+              fontsize = 14, alpha = .85)
 plt.text(x = 0.13, y = 126, s = 'NTC', color = 'grey', fontsize = 8, weight = 'bold', backgroundcolor = '#f0f0f0')
 plt.text(x = 1.13, y = 99, s = 'Nabil', color = 'grey', fontsize = 8, weight = 'bold', backgroundcolor = '#f0f0f0')
 plt.text(x = 2.13, y = 61, s = 'Nepal Life', color = 'grey',  fontsize = 8, weight = 'bold', backgroundcolor = '#f0f0f0')
